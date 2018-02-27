@@ -1,0 +1,9 @@
+services:
+    - BootIq\CmsApiVendor\Nette\Control\Block\HtmlBlockControl
+
+    - BootIq\CmsApiVendor\Nette\Factory\BlockControlFactory
+    - BootIq\CmsApiVendor\Nette\Factory\PageControlFactory
+    - BootIq\CmsApiVendor\Nette\Factory\PageServiceFactory(@biq_cms_adapter)
+
+    - BootIq\CmsApiVendor\Request\Page\PageRequestFactory
+    - BootIq\CmsApiVendor\ResponseMapper\ResponseMapperFactory
